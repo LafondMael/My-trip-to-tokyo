@@ -1,0 +1,42 @@
+/* Définition des polices */
+
+/*Définition des couleurs :
+pour la police : 
+rouge : #b41b0f
+gris : #333
+rose : #f1535c
+
+*/
+
+/* Elements principaux de la page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'Kalam-Bold';
+    src: url('Kalam-Regular.ttf');
+    }
+
+h1 {
+    color: #f1535c;
+    font: 'Kalam-Regular', sans-serif;
+}
+
+p {
+    color: #333;
+    font: colibri, sans-serif;
+    
+}
+
+
+
+
+
+
+
+
