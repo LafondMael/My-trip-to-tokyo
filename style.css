@@ -19,12 +19,12 @@ rose : #f1535c
 
 @font-face {
     font-family: 'Kalam-Bold';
-    src: url('Kalam-Regular.ttf');
+    src: url('Kalam-Regular.ttf') format('ttf');
     }
 
 h1 {
     color: #f1535c;
-    font: 'Kalam-Regular', sans-serif;
+    font-family: 'Kalam', cursive;
 }
 
 p {
