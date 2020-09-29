@@ -55,19 +55,37 @@ p {
     
 }
 
+#social {
+    display: flex;
+    justify-content: center;
+}
+
+
+#social img{
+    width: 4%;
+}
+
+#footerLink {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+a {
+    color: #f1535c;
+    text-decoration: none;
+    font-style: bold;
 
 /* Responsive design */
 /* For mobile */
 @media screen and (max-width: 768px) { 
     
   }
-
 /* For tablets and laptops */
   @media screen and (min-width: 769px) { 
-    
-
 }
-
+  
 #lorem {
   margin: 0 30%;
   text-align: justify;
