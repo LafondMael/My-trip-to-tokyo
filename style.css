@@ -33,10 +33,24 @@ p {
     
 }
 
+#social {
+    display: flex;
+    justify-content: center;
+}
 
+#social img{
+    width: 4%;
+}
 
+#footerLink {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
 
-
-
-
-
+a {
+    color: #f1535c;
+    text-decoration: none;
+    font-style: bold;
+}
