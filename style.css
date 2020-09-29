@@ -1,15 +1,11 @@
-/* Définition des polices */
-
 /*Définition des couleurs :
 pour la police : 
 rouge : #b41b0f
 gris : #333
 rose : #f1535c
-
 */
 
 /* Elements principaux de la page */
-
 * {
     margin: 0;
     padding: 0;
@@ -45,6 +41,12 @@ header{
 h1 {
     color: #f1535c;
     font: 'Kalam-Regular', sans-serif;
+    src: url('Kalam-Regular.ttf') format('ttf');
+    }
+
+h1 {
+    color: #f1535c;
+    font-family: 'Kalam', cursive;
 }
 
 p {
@@ -54,3 +56,13 @@ p {
 }
 
 
+/* Responsive design */
+/* For mobile */
+@media screen and (max-width: 768px) { 
+    
+  }
+
+/* For tablets and laptops */
+  @media screen and (min-width: 769px) { 
+    
+}
