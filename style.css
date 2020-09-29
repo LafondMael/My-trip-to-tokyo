@@ -44,9 +44,7 @@ p {
     
 }
 
-
-
-
-
-
-
+#lorem {
+  margin: 0 30%;
+  text-align: justify;
+}
