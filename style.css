@@ -1,6 +1,3 @@
-
-/* Elements principaux de la page */
-
 /*Définition des couleurs :
 pour la police : 
 rouge : #b41b0f
@@ -8,7 +5,7 @@ gris : #333
 rose : #f1535c
 */
 
-
+/* Elements principaux de la page */
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +15,32 @@ rose : #f1535c
 
 @font-face {
     font-family: 'Kalam-Bold';
+    src: url('Kalam-Regular.ttf');
+    }
+
+header{
+    background-color: teal ;
+    position: relative;
+    display: flex;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+    min-width: 500px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+ .Logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+h1 {
+    color: #f1535c;
+    font: 'Kalam-Regular', sans-serif;
     src: url('Kalam-Regular.ttf') format('ttf');
     }
 
@@ -32,8 +55,8 @@ p {
     
 }
 
-/* Responsive design */
 
+/* Responsive design */
 /* For mobile */
 @media screen and (max-width: 768px) { 
     
@@ -43,10 +66,3 @@ p {
   @media screen and (min-width: 769px) { 
     
 }
-
-
-
-
-
-
-
