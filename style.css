@@ -76,6 +76,7 @@ a {
     color: #f1535c;
     text-decoration: none;
     font-style: bold;
+}
 
 /* Responsive design */
 /* For mobile */
@@ -87,7 +88,6 @@ a {
 }
   
 #lorem {
-  margin: 0 30%;
-  text-align: justify;
-
+    margin: 0 30%;
+    text-align: justify;
 }
