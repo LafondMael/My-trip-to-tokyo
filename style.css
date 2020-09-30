@@ -40,14 +40,9 @@ header{
 
 h1 {
     color: #f1535c;
-    font: 'Kalam-Regular', sans-serif;
-    src: url('Kalam-Regular.ttf') format('ttf');
-    }
-
-h1 {
-    color: #f1535c;
     font-family: 'Kalam', cursive;
-}
+    margin: 40px;
+    }
 
 p {
     color: #333;
@@ -76,10 +71,33 @@ a {
     color: #f1535c;
     text-decoration: none;
     font-style: bold;
+}
+
+.bloc-page {
+    margin: 5%;
+}
+
+.description-site {
+    margin: 40px 0px;
+}
+
+.categories {
+        
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    align-items: center;
+}
+.sous-categories {
+    border: 1px solid black;
+    height: 200px;
+    width: 20%;
+}
 
 /* Responsive design */
 /* For mobile */
 @media screen and (max-width: 768px) { 
+
     
   }
 /* For tablets and laptops */
