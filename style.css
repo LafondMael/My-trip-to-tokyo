@@ -5,6 +5,12 @@ gris : #333
 rose : #f1535c
 */
 
+@media screen and (max-width: 813px) {
+}
+/* For tablets and laptops */
+@media screen and (min-width: 769px) {
+}
+
 /* Elements principaux de la page */
 
 * {
@@ -121,7 +127,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   height: 120px;
-  min-width: 500px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -172,9 +178,4 @@ a {
 
   /* Responsive design */
   /* For mobile */
-  @media screen and (max-width: 768px) {
-  }
-  /* For tablets and laptops */
-  @media screen and (min-width: 769px) {
-  }
 }
