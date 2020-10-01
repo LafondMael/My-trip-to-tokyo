@@ -144,12 +144,6 @@ h1 {
   font: "Kalam-Regular", sans-serif;
   src: url("Kalam-Regular.ttf") format("ttf");
 }
-
-h1 {
-  color: #f1535c;
-  font-family: "Kalam", cursive;
-}
-
 p {
   color: #333;
   font: colibri, sans-serif;
