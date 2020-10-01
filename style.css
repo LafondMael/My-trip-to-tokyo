@@ -5,19 +5,26 @@ gris : #333
 rose : #f1535c
 */
 
-@media screen and (max-width: 813px) {
-}
-/* For tablets and laptops */
-@media screen and (min-width: 769px) {
-}
-
-/* Elements principaux de la page */
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+/* Responsive design */
+/* For mobile */
+@media screen and (max-width: 768px) { 
+  .categories {
+      flex-wrap: wrap;
+  }
+  
+  
+}
+/* For tablets and laptops */
+@media screen and (min-width: 769px) { 
+}
+
+/* Elements principaux de la page */
+
 body {
   font-family: "Kalam", cursive;
 }
@@ -72,6 +79,7 @@ nav .logo {
   font-size: 25px;
   cursor: pointer;
 }
+
 @media (max-width: 800px) {
   nav .mainMenu {
     height: 100vh;
@@ -106,7 +114,9 @@ nav .logo {
     padding: 12px;
   }
 }
-
+/*
+Barre de Nav
+*/
 
 h1 {
     color: #f1535c;
@@ -200,38 +210,18 @@ a {
 }
 
 .attractions {
-    background-image: url("images/tori.jpg"); 
+    background-image: url("Images/tori.jpg"); 
     
 }
 .food {
-    background-image: url("images/food.jpg"); 
+    background-image: url("Images/food.jpg"); 
 }
 .tips {
-    background-image: url("images/tips.jpg"); 
+    background-image: url("Images/tips.jpg"); 
 }
 .animes {
-    background-image: url("images/animes.jpg")
+    background-image: url("Images/animes.jpg")
 }
-
-/* Responsive design */
-/* For mobile */
-@media screen and (max-width: 768px) { 
-    .categories {
-        flex-wrap: wrap;
-    }
-    
-    
-  }
-/* For tablets and laptops */
-  @media screen and (min-width: 769px) { 
-}
-
-/* Début legal_notice */
-#lorem {
-    margin: 0 30%;
-    text-align: justify;
-}
-/* Fin legal_notice */
 
 /* Début monuments */
 .container {
@@ -253,10 +243,10 @@ a {
     background-color: #f1535c;
 }
 /* Fin monuments */
-  color: #f1535c;
-  text-decoration: none;
-  font-style: bold;
 
-  /* Responsive design */
-  /* For mobile */
+/* Début legal_notice */
+#lorem {
+  margin: 0 30%;
+  text-align: justify;
 }
+/* Fin legal_notice */
