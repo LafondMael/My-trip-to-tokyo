@@ -222,6 +222,12 @@ a {
   }
 /* For tablets and laptops */
   @media screen and (min-width: 769px) { 
+}
+  
+#lorem {
+    margin: 0 30%;
+    text-align: justify;
+}
   color: #f1535c;
   text-decoration: none;
   font-style: bold;
