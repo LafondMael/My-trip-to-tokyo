@@ -153,6 +153,7 @@ p {
   font: colibri, sans-serif;
 }
 
+/* Début footer */
 #social {
   display: flex;
   justify-content: center;
@@ -174,6 +175,7 @@ a {
     text-decoration: none;
     font-style: bold;
 }
+/* Fin footer */
 
 .bloc-page {
     margin: 5%;
@@ -223,11 +225,34 @@ a {
 /* For tablets and laptops */
   @media screen and (min-width: 769px) { 
 }
-  
+
+/* Début legal_notice */
 #lorem {
     margin: 0 30%;
     text-align: justify;
 }
+/* Fin legal_notice */
+
+/* Début monuments */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+
+.container img {
+    max-width: 300px;
+
+}
+
+.imgForm {
+    padding: 1%;
+    margin: 1%;
+    background-color: #f1535c;
+}
+/* Fin monuments */
   color: #f1535c;
   text-decoration: none;
   font-style: bold;
