@@ -133,26 +133,6 @@ h2 {
     padding: 10px;
 }
 
-header {
-  background-color: teal;
-  position: relative;
-  display: flex;
-  padding: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 120px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.Logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 h1 {
   color: #f1535c;
   font: "Kalam-Regular", sans-serif;
