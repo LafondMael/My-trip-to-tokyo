@@ -4,7 +4,7 @@ body .bloc-page {
     margin: 5%;
   }
 
-.article {
+.article-monuments {
     display: flex;
     flex-direction: row;
     width: auto;
@@ -12,11 +12,11 @@ body .bloc-page {
     justify-content: center;
     margin-bottom: 40px;
 }
-.article p {
+.article-monuments p {
   text-align: justify;
   width: 70%;
 }
-figure {
+.article-monuments figure {
   margin-right: 50px;
   color: #f1535c;
   font-size: 1.5em;
@@ -31,18 +31,18 @@ figure {
     body .bloc-page { 
       margin: 0;
     }
-    .bloc-page .article {
+    .bloc-page .article-monuments {
       flex-direction: column;
       align-items: center;
     }
-    .bloc-page .article figure {
+    .bloc-page .article-monuments figure {
       margin: 0;
       width: 100%;
     }
-    .bloc-page .article figure img {
+    .bloc-page .article-monuments figure img {
       width: 100%;
     }
-    .bloc-page .article p {
+    .bloc-page .article-monuments p {
       margin-top: 10px;
       width: 90%;
     }
