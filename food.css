@@ -1,6 +1,6 @@
 /* Structure articles & images à utiliser sur chaque page*/
 
-body .bloc-page { 
+body .bloc-page-sushi { 
     margin: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
@@ -16,27 +16,50 @@ body .bloc-page {
   font-size: 1.5em;
 }
 
+.price-tag {
+  background-color: #696969;
+  color: white;
+  border-radius: 4px;
+  padding: 0px 2px;
+}
+
+.food-tag {
+  color: white;
+  border-radius: 4px;
+  background-color: #f1535c;
+  padding: 0px 2px;
+}
+
+.food-tag-veggie {
+  background-color: #66CDAA;
+  color: white;
+  border-radius: 4px;
+  padding: 0px 2px;
+
+}
+
+
 /* Fin structure articles & images à utiliser */
 
 /* Responsive design */
 /* For mobile */
 @media screen and (max-width: 768px) { 
-    body .bloc-page { 
+    body .bloc-page-sushi { 
       margin: 0;
       grid-template-columns: 100%;
     }
-   .bloc-page .article-food {
+   .bloc-page-sushi .article-food {
        text-align: center;
        padding: 5%;
     }
-    .bloc-page .article-food figure {
+    .bloc-page-sushi .article-food figure {
       margin: 0;
       width: 100%;
     }
-    .bloc-page .article-food figure img {
+    .bloc-page-sushi .article-food figure img {
       width: 100%;
     }
-    .bloc-page .article-food p {
+    .bloc-page-sushi .article-food p {
       margin-top: 10px;
       width: 90%;
     } 
