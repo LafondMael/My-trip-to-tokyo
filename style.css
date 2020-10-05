@@ -14,12 +14,9 @@ rose : #f1535c
   margin: 0;
   padding: 0;
 }
-<<<<<<< HEAD
-=======
 
 /* Elements principaux de la page */
 
->>>>>>> 81503a831c3de12647012a7b5c4555f8478d0d90
 body {
   font-family: "Kalam", cursive;
 }
@@ -158,24 +155,9 @@ p {
 }
 
 a {
-<<<<<<< HEAD
   color: #f1535c;
   text-decoration: none;
   font-style: bold;
-
-  /* Responsive design */
-  /* For mobile */
-}
-
-@media screen and (max-width: 813px) {
-}
-
-@media screen and (min-width: 769px) {
-}
-=======
-    color: #f1535c;
-    text-decoration: none;
-    font-style: bold;
 }
 /* Fin footer */
 
@@ -188,7 +170,7 @@ a {
 
 /* Responsive design */
 /* For mobile */
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
   .categories {
     flex-wrap: wrap;
   }
@@ -228,4 +210,3 @@ input[type="submit"] {
   padding: 20px;
 }
 /*Contact Us*/
->>>>>>> 81503a831c3de12647012a7b5c4555f8478d0d90
