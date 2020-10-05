@@ -1,0 +1,46 @@
+.bloc-page-accueil {
+    margin: 5%;
+}
+
+h2 {
+    color: white;
+}
+
+.description-site {
+    margin: 40px 0px;
+    text-align: justify;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sous-categories {
+    width: 300px;
+    height: 300px; 
+    margin: 10px;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.monuments {
+    background-image: url("Images/monuments-resize.png"); 
+    
+}
+.food {
+    background-image: url("Images/food-resize.png"); 
+}
+.maps {
+    background-image: url("Images/maps-resize.png"); 
+}
+.animes {
+    background-image: url("Images/anime-resize.png")
+}
+/* Responsive design */
+/* For mobile */
+@media screen and (max-width: 768px) { 
+    .categories {
+      flex-wrap: wrap;
+    }
+}
