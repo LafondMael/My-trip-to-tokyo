@@ -10,18 +10,6 @@ rose : #f1535c
   margin: 0;
   padding: 0;
 }
-/* Responsive design */
-/* For mobile */
-@media screen and (max-width: 768px) { 
-  .categories {
-      flex-wrap: wrap;
-  }
-  
-  
-}
-/* For tablets and laptops */
-@media screen and (min-width: 769px) { 
-}
 
 /* Elements principaux de la page */
 
@@ -132,15 +120,10 @@ h2 {
     text-align: center;
     padding: 10px;
 }
-
-h1 {
-  color: #f1535c;
-  font: "Kalam-Regular", sans-serif;
-  src: url("Kalam-Regular.ttf") format("ttf");
-}
 p {
   color: #333;
-  font: colibri, sans-serif;
+  font-family: colibri, sans-serif;
+  line-height: 1.5;
 }
 
 /* Début footer */
@@ -196,33 +179,35 @@ a {
 .food {
     background-image: url("Images/food.jpg"); 
 }
-.tips {
-    background-image: url("Images/tips.jpg"); 
+.maps {
+    background-image: url("Images/maps.jpg"); 
 }
 .animes {
     background-image: url("Images/animes.jpg")
 }
 
-/* Début monuments */
-.container {
+/* Structure articles & images à utiliser sur chaque page*/
+
+article {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: row;
+    width: auto;
     text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+article p {
+  text-align: justify;
+  width: 70%;
+}
+figure {
+  margin-right: 50px;
+  color: #f1535c;
+  font-size: 1.5em;
+  width: auto;
 }
 
-.container img {
-    max-width: 300px;
-
-}
-
-.imgForm {
-    padding: 1%;
-    margin: 1%;
-    background-color: #f1535c;
-}
-/* Fin monuments */
+/* Fin structure articles & images à utiliser */
 
 /* Début legal_notice */
 #lorem {
@@ -230,3 +215,46 @@ a {
   text-align: justify;
 }
 /* Fin legal_notice */
+
+/* Responsive design */
+/* For mobile */
+@media screen and (max-width: 768px) { 
+  .categories {
+    flex-wrap: wrap;
+  }
+
+  article {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Contact Us*/
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/*Contact Us*/
