@@ -35,7 +35,7 @@ nav .mainMenu li a {
   padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 nav .mainMenu li a:hover {
@@ -154,6 +154,9 @@ p {
   line-height: 1.5;
 }
 
+.img-anime {
+  width: 100%;
+}
 a {
   color: #f1535c;
   text-decoration: none;
