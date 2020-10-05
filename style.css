@@ -120,10 +120,19 @@ h2 {
     text-align: center;
     padding: 10px;
 }
+h3 {
+  font-family: calibri, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
 p {
   color: #333;
-  font-family: colibri, sans-serif;
+  font-family: calibri, sans-serif;
   line-height: 1.5;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 /* Début footer */
@@ -149,65 +158,6 @@ a {
     font-style: bold;
 }
 /* Fin footer */
-
-.bloc-page {
-    margin: 5%;
-}
-
-.description-site {
-    margin: 40px 0px;
-    text-align: justify;
-}
-
-.categories {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.sous-categories {
-    width: 300px;
-    height: 300px; 
-    margin: 10px;
-    background-color: #ffffff;
-    opacity: 0.5;
-}
-
-.attractions {
-    background-image: url("Images/tori.jpg"); 
-    
-}
-.food {
-    background-image: url("Images/food.jpg"); 
-}
-.maps {
-    background-image: url("Images/maps.jpg"); 
-}
-.animes {
-    background-image: url("Images/animes.jpg")
-}
-
-/* Structure articles & images à utiliser sur chaque page*/
-
-article {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-article p {
-  text-align: justify;
-  width: 70%;
-}
-figure {
-  margin-right: 50px;
-  color: #f1535c;
-  font-size: 1.5em;
-  width: auto;
-}
-
-/* Fin structure articles & images à utiliser */
 
 /* Début legal_notice */
 #lorem {
