@@ -137,6 +137,11 @@ p {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
+.banner{
+  color: #f1535c;
+  font-family: "Kalam", cursive;
+  text-align: center;
+}
 
 #social {
   display: flex;
@@ -213,3 +218,9 @@ input[type="submit"] {
   padding: 20px;
 }
 /*Contact Us*/
+/*Map*/
+.MapTxt {
+  color: #f1535c;
+  font-family: "Kalam", cursive;
+  text-align: center;
+}
