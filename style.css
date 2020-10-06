@@ -165,9 +165,14 @@ a {
 /* Fin footer */
 
 /* Début legal_notice */
+#titleLegal{
+  text-align: center;
+  padding: 5%;
+}
 #lorem {
-  margin: 0 30%;
+  margin: 0 10%;
   text-align: justify;
+  padding-bottom: 5%;
 }
 /* Fin legal_notice */
 
