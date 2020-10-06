@@ -138,29 +138,32 @@ p {
   margin-block-end: 1em;
 }
 
+.img-anime {
+  width: 100%;
+}
+
+
+/* Début footer */
 #social {
   display: flex;
   justify-content: center;
 }
-
 #social img {
   width: 4%;
 }
-
 #footerLink {
   align-items: center;
   display: flex;
   flex-direction: column;
   line-height: 1.5;
 }
-
-.img-anime {
-  width: 100%;
-}
 a {
   color: #f1535c;
   text-decoration: none;
   font-style: bold;
+}
+footer{
+  padding-bottom: 3%;
 }
 /* Fin footer */
 
@@ -181,6 +184,9 @@ a {
   article {
     flex-direction: column;
     align-items: center;
+  }
+  #social img {
+    width: 10%;
   }
 }
 
