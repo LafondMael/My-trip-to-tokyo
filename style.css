@@ -125,6 +125,9 @@ h3 {
   font-weight: bold;
   font-size: 1.5em;
   text-transform: uppercase;
+  color: white;
+  background-color: #f1535c;
+  display: inline;
 }
 p {
   color: #333;
