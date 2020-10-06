@@ -1,4 +1,53 @@
+/* #slidesushi {
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate(0, 0);
+}
+#slidesushi > div {
+  width: 2526px;
+  background: url("Images/sushi-resize.png");
+  position: absolute; 
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate(0, 0);
+}
+#slidesushi #sushi1 {
+  animation: moveSlideshow 15s linear infinite;
+}
+
+#slidesushi #sushi2 {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  background-position: 0 -200px;
+  animation: moveSlideshow 20s linear infinite;
+}
+#slidesushi:hover #sushi2 {
+  opacity: 0/;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(66.6666%);
+  }
+} */ 
+
 /* Structure articles & images à utiliser sur chaque page*/
+
+.slidesushi {
+  background: url("Images/sushi-resize.png");
+  display: inline-block;
+  float: left;
+  transition: all .2s ease-out;
+}
+
+@keyframes moveSlideshow {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
 
 body .bloc-page-sushi { 
     margin: 5%;
