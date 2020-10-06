@@ -138,6 +138,7 @@ p {
   margin-block-end: 1em;
 }
 
+/* Début footer */
 #social {
   display: flex;
   justify-content: center;
@@ -145,6 +146,11 @@ p {
 
 #social img {
   width: 4%;
+  filter: grayscale(1);
+}
+
+#social img:hover {
+  filter: grayscale(0)
 }
 
 #footerLink {
