@@ -1,53 +1,62 @@
-/* #slidesushi {
+/*.sushi {
+  width: 50px;
   height: 50px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-  transform: translate(0, 0);
-}
-#slidesushi > div {
-  width: 2526px;
-  background: url("Images/sushi-resize.png");
-  position: absolute; 
-  top: 0;
-  left: 0;
-  height: 100%;
-  transform: translate(0, 0);
-}
-#slidesushi #sushi1 {
-  animation: moveSlideshow 15s linear infinite;
-}
-
-#slidesushi #sushi2 {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-  background-position: 0 -200px;
-  animation: moveSlideshow 20s linear infinite;
-}
-#slidesushi:hover #sushi2 {
-  opacity: 0/;
-}
-
-@keyframes moveSlideshow {
-  100% {
-    transform: translateX(66.6666%);
-  }
-} */ 
-
-/* Structure articles & images à utiliser sur chaque page*/
-
-.slidesushi {
-  background: url("Images/sushi-resize.png");
+  background: #999;
+  border-radius: 50px;
   display: inline-block;
+  margin: 0 24.7px;
   float: left;
   transition: all .2s ease-out;
 }
+*/
+.sushi {
+  background: url("Images/sushi-resize.png");
+  width: 50px;
+  height: 100px;
+  display: inline-block;
+  /*float: left;*/
+  transition: all .2s ease-out;
+  margin: 0px 50px;
+  border: 1px solid pink;
+}
 
-@keyframes moveSlideshow {
+.sushi:hover {
+  transform: scale(1.2);
+  opacity: .5;
+  cursor: pointer;
+}
+
+.slide-sushi {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  /*box-sizing: border-box;*/
+  position: relative;
+  margin: 50px auto;
+  border: 1px solid yellow;
+}
+
+.slide-sushi--inner {
+  display: block;
+  width: 200%;
+  margin: 70px 0;
+  position: absolute;
+  animation: marquee 7s linear infinite;
+  border: 1px solid blue;
+  top: -30%;
+}
+
+.slide-sushi--inner:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
   0% { left: 0; }
   100% { left: -100%; }
 }
+
+/* Structure articles & images à utiliser sur chaque page*/
+
 
 body .bloc-page-sushi { 
     margin: 5%;
