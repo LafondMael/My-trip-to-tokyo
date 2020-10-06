@@ -1,65 +1,6 @@
-/*.sushi {
-  width: 50px;
-  height: 50px;
-  background: #999;
-  border-radius: 50px;
-  display: inline-block;
-  margin: 0 24.7px;
-  float: left;
-  transition: all .2s ease-out;
-}
-*/
-.sushi {
-  background: url("Images/sushi-resize.png");
-  width: 50px;
-  height: 100px;
-  display: inline-block;
-  /*float: left;*/
-  transition: all .2s ease-out;
-  margin: 0px 50px;
-  border: 1px solid pink;
-}
-
-.sushi:hover {
-  transform: scale(1.2);
-  opacity: .5;
-  cursor: pointer;
-}
-
-.slide-sushi {
-  height: 100px;
-  width: 100%;
-  overflow: hidden;
-  /*box-sizing: border-box;*/
-  position: relative;
-  margin: 50px auto;
-  border: 1px solid yellow;
-}
-
-.slide-sushi--inner {
-  display: block;
-  width: 200%;
-  margin: 70px 0;
-  position: absolute;
-  animation: marquee 7s linear infinite;
-  border: 1px solid blue;
-  top: -30%;
-}
-
-.slide-sushi--inner:hover {
-  animation-play-state: paused;
-}
-
-@keyframes marquee {
-  0% { left: 0; }
-  100% { left: -100%; }
-}
-
 /* Structure articles & images à utiliser sur chaque page*/
-
-
 body .bloc-page-sushi { 
-    margin: 5%;
+    margin: 2% 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-gap: 30px;
@@ -100,6 +41,41 @@ body .bloc-page-sushi {
 /* Fin structure articles & images à utiliser */
 
 /* Responsive design */
+
+/* For desktop */
+@media screen and (min-width: 769px) { 
+  .sushi {
+    background: url("Images/sushi-resize.png");
+    width: 50px;
+    height: 60px;
+    display: inline-block;
+    transition: all .2s ease-out;
+    margin: 0px 50px;
+  }
+  
+  .slide-sushi {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide-sushi--inner {
+    display: block;
+    width: 200%;
+    margin: 70px 0;
+    position: absolute;
+    animation: marquee 7s linear infinite;
+    top: -40%;
+  }
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+}
+
+
 /* For mobile */
 @media screen and (max-width: 768px) { 
     body .bloc-page-sushi { 
