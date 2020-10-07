@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>My trip to Tokyo</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -11,22 +11,38 @@
       href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+    crossorigin="anonymous"
+  />
   </head>
   <body>
     <header>
-
-
-      <h1 class="Logo">Project Japan</h1>
-      <img src="/Images/Logo.jpg" alt="Logo">
-        <nav> 
-          
-
-        </nav>
-
+      <nav>
+        <div class="logo"><h1>日本</h1></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="monuments.html">Monuments</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="maps.html">Maps</a></li>
+          <li><a href="anime.html">Animes</a></li>
+          <li><a href="contactUs.html">Contact Us</a></li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
+          <span class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+          </span>
+        </ul>
+      </nav>
     </header>
 
     <section>
-      <h1>Legal Notice</h1>
+      <h1 id="titleLegal">Legal Notice</h1>
       <p id="lorem">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
         Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies
