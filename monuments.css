@@ -1,14 +1,14 @@
 /* Structure articles & images à utiliser sur chaque page*/
 
-body .bloc-page { 
-    margin: 5%;
-  }
+body{
+  padding-bottom: 100px;
+}
 
 .article-monuments {
     display: flex;
     flex-direction: row;
     width: auto;
-    margin: 70px 0;
+    margin: 5% 3%;
     text-align: center;
     justify-content: center;
     box-shadow: 5px 5px 5px 5px #e9e8e8;

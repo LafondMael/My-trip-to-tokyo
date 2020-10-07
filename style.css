@@ -160,12 +160,18 @@ p {
   justify-content: center;
 }
 #social img {
-  width: 4%;
+  width: 100%;
   filter: grayscale(1);
 }
 
 #social img:hover {
   filter: grayscale(0);
+}
+
+.icons{
+  display: inline-block;
+  width: 55px;
+  height: 55px;
 }
 #footerLink {
   align-items: center;
@@ -179,7 +185,15 @@ p {
   font-weight: bold;
 }
 footer{
-  padding-bottom: 3%;
+  margin: 0;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 -10px 70px -18px black;
 }
 /* Fin footer */
 
@@ -206,9 +220,12 @@ footer{
     flex-direction: column;
     align-items: center;
   }
-  #social img {
-    width: 10%;
+
+  .icons {
+    width: 30px;
+    height: 30px;
   }
+
 }
 
 /*Contact Us*/
