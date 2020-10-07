@@ -5,17 +5,62 @@ gris : #333
 rose : #f1535c
 */
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+/* For tablets and laptops */
 
 /* Elements principaux de la page */
 
-body {
-  font-family: "Kalam", cursive;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
+body{
+  padding-bottom: 70px;
+}
+
+@font-face {
+  font-family: "Kalam-Bold";
+  src: url("Kalam-Regular.ttf");
+}
+h1 {
+  color: #f1535c;
+  font-size: 3em;
+  font-family: 'Kalam', cursive;
+  margin-bottom: 30px;
+  }
+
+h2 {
+  color: #f1535c;
+  font-weight: bold;
+  font-family: 'Kalam', cursive;
+  text-align: center;
+  padding: 10px;
+}
+ 
+h3 {
+  font-family: calibri, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white;
+  background-color: #f1535c;
+  display: inline;
+}
+
+p {
+  color: #333;
+  font-family: calibri, sans-serif;
+  line-height: 1.5;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+figcaption {
+  font-family: 'Kalam', cursive;
+}
+/* Elements principaux de la page */
+
 nav {
   background: #000;
   color: #fff;
@@ -31,8 +76,9 @@ nav .mainMenu li a {
   padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.5rem;
+  font-family: "Kalam", cursive;
 }
 nav .mainMenu li a:hover {
   background: rgb(255, 94, 0);
@@ -67,7 +113,6 @@ nav .logo {
   font-size: 25px;
   cursor: pointer;
 }
-
 @media (max-width: 800px) {
   nav .mainMenu {
     height: 100vh;
@@ -102,37 +147,10 @@ nav .logo {
     padding: 12px;
   }
 }
-/*
-Barre de Nav
-*/
 
-h1 {
-    color: #f1535c;
-    font-size: 3em;
-    font-family: 'Kalam', cursive;
-    margin-bottom: 30px;
-    }
 
-h2 {
-    color: #f1535c;
-    font-weight: bold;
-    font-family: 'Kalam', cursive;
-    text-align: center;
-    padding: 10px;
-}
-h3 {
-  font-family: calibri, sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
-  text-transform: uppercase;
-}
-p {
-  color: #333;
-  font-family: calibri, sans-serif;
-  line-height: 1.5;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
+.img-anime {
+  width: 100%;
 }
 
 /* Début footer */
@@ -140,35 +158,59 @@ p {
   display: flex;
   justify-content: center;
 }
-
 #social img {
-  width: 4%;
+  width: 100%;
+  filter: grayscale(1);
 }
 
+#social img:hover {
+  filter: grayscale(0);
+}
+
+.icons{
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+}
 #footerLink {
   align-items: center;
   display: flex;
   flex-direction: column;
   line-height: 1.5;
 }
-
-a {
-    color: #f1535c;
-    text-decoration: none;
-    font-style: bold;
+.linkFooter {
+  color: #f1535c;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer{
+  margin: 0;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 -10px 70px -18px black;
 }
 /* Fin footer */
 
 /* Début legal_notice */
+#titleLegal{
+  text-align: center;
+  padding: 5%;
+}
 #lorem {
-  margin: 0 30%;
+  margin: 0 10%;
   text-align: justify;
+  padding-bottom: 5%;
 }
 /* Fin legal_notice */
 
 /* Responsive design */
 /* For mobile */
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
   .categories {
     flex-wrap: wrap;
   }
@@ -177,6 +219,12 @@ a {
     flex-direction: column;
     align-items: center;
   }
+
+  .icons {
+    width: 30px;
+    height: 30px;
+  }
+
 }
 
 /*Contact Us*/
@@ -208,3 +256,9 @@ input[type="submit"] {
   padding: 20px;
 }
 /*Contact Us*/
+/*Map*/
+.MapTxt {
+  color: #f1535c;
+  font-family: "Kalam", cursive;
+  text-align: center;
+}

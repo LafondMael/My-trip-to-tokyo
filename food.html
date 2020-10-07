@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>My trip to Tokyo</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="food.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="food.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam&display=swap"
+      rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-  
     <header>
         <nav>
-          <div class="logo"><h1>日本</h1></div>
+          <div class="logo"><img src="Images/logo1.png" alt="Logo"></div>
           <div class="openMenu"><i class="fa fa-bars"></i></div>
           <ul class="mainMenu">
             <li><a href="index.html">Home</a></li>
@@ -32,32 +40,63 @@
         </nav>
       </header>
    
-    <div class="bloc-page">
+      <div class="slide-sushi">
+        <div class="slide-sushi--inner">
+            <div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div><div class="sushi"></div>
+        </div>
+      </div>
+
+
+    <div class="bloc-page-sushi">
+
       <article class="article-food">
         <figure>
-          <img src="Images/mitsugi-sushi-resized.png" alt = "Mitsugi Sushi restaurant">
+          <img
+            src="Images/mitsugi-sushi-resized.png"
+            alt="Mitsugi Sushi restaurant"
+          />
           <figcaption>Mitsugi Sushi</figcaption>
         </figure>
 
+        <span class="price-tag">¥¥¥</span>
+        <span class="food-tag">Sushi</span>
+        <span class="food-tag">Trendy</span>
+
         <p> Classic Edo-style sushi from Mitsugi-San, a true master who encourages guests to eat the superb (and reasonably-priced omakase courses) in whatever fashion pleases them most—no fuss or pomp necessary.
+
         </p>
       </article>
 
       <article class="article-food">
         <figure>
-          <img src="Images/shunju-shibuya-resized.png" alt = "Shunju Shibuya restaurant">
+          <img
+            src="Images/shunju-shibuya-resized.png"
+            alt="Shunju Shibuya restaurant"
+          />
           <figcaption>Shunju Shibuya</figcaption>
         </figure>
 
+        <span class="price-tag">¥¥</span>
+        <span class="food-tag">Tempura</span>
+        <span class="food-tag-veggie">Veggie</span>
+
         <p> The restaurant's name, Shunju, means spring and autumn. Dishes include items like pike eel and summer vegetables in tempura, or homemade tofu with freshly-grated wasabi alongside grilled red snapper.
+
         </p>
       </article>
 
       <article class="article-food">
         <figure>
-          <img src="Images/takaosan-yakuoin-resized.png" alt = "Takaosan Yakuoin restaurant">
+          <img
+            src="Images/takaosan-yakuoin-resized.png"
+            alt="Takaosan Yakuoin restaurant"
+          />
           <figcaption>Takaosan Yakuoin</figcaption>
         </figure>
+
+        <span class="price-tag">¥¥¥</span>
+        <span class="food-tag">Monk Cuisine</span>
+        <span class="food-tag-veggie">Veggie</span>
 
         <p> Shojin ryori (vegetarian Buddhist monk cuisine) is served inside this temple precinct at Mt. Takao's Yakuoin. Walk-in meals are available at lunchtime.
         </p>
@@ -65,9 +104,16 @@
 
       <article class="article-food">
         <figure>
-          <img src="Images/tokyo-ramen-street-resized.png" alt = "Tokyo Ramen restaurant">
+          <img
+            src="Images/tokyo-ramen-street-resized.png"
+            alt="Tokyo Ramen restaurant"
+          />
           <figcaption>Tokyo Ramen Street</figcaption>
         </figure>
+
+        <span class="price-tag">¥</span>
+        <span class="food-tag">Ramen</span>
+        <span class="food-tag">Chinese</span>
 
         <p> Eight of Tokyo's most famous ramen restaurants are gathered in one place in Tokyo station. Here, ramen fanatics can choose from myriad flavors and toppings, like standard shoyu, miso, or salt bases.
         </p>
@@ -75,9 +121,13 @@
 
       <article class="article-food">
         <figure>
-          <img src="Images/nomin-cafe-resized.png" alt = "Nomin cafe">
+          <img src="Images/nomin-cafe-resized.png" alt="Nomin cafe" />
           <figcaption>Nomin Cafe</figcaption>
         </figure>
+
+        <span class="price-tag">¥</span>
+        <span class="food-tag">Coffee shop</span>
+        <span class="food-tag-veggie">Veggie</span>
 
         <p> A converted house in the rock-and-roll neighborhood of Shimokitazawa is now an organic cafe serving rustic, vegetable-focused food. Low, wooden tables fill the backyard terrace.
         </p>
@@ -85,9 +135,16 @@
 
       <article class="article-food">
         <figure>
-          <img src="Images/fukuro-no-mise-resized.png" alt = "Fukuro no mise cafe">
+          <img
+            src="Images/fukuro-no-mise-resized.png"
+            alt="Fukuro no mise cafe"
+          />
           <figcaption>Fukuro no Mise</figcaption>
         </figure>
+
+        <span class="price-tag">¥¥</span>
+        <span class="food-tag">Coffee shop</span>
+        <span class="food-tag">Owls</span>
 
         <p> Sip coffee in the presence of the wise ones in this petting zoo-coffee shop hybrid: one of the latest animal cafes to appear in Japan. It's literally a cafe, full of owls.
         </p>
@@ -95,9 +152,16 @@
 
       <article class="article-food">
         <figure>
-          <img src="Images/omotesando-ukaitei-resized.png" alt = "Omotesando Ukaitei restaurant">
+          <img
+            src="Images/omotesando-ukaitei-resized.png"
+            alt="Omotesando Ukaitei restaurant"
+          />
           <figcaption>Omotesando Ukaitei</figcaption>
         </figure>
+
+        <span class="price-tag">¥¥¥</span>
+        <span class="food-tag">Teppanyaki</span>
+        <span class="food-tag">Iron-grill</span>
 
         <p> An opulent former merchant's house (decorated with Nihon-ga style paintings, marble floors, and antiques preserved in glass display cases) accommodates this teppanyaki, or iron grill-style restaurant.
         </p>
@@ -105,30 +169,32 @@
 
       <article class="article-food">
         <figure>
-          <img src="Images/tstantan-resized.png" alt = "T'S Tantan restaurant">
+          <img src="Images/tstantan-resized.png" alt="T'S Tantan restaurant" />
           <figcaption>T's Tantan</figcaption>
         </figure>
+
+        <span class="price-tag">¥¥</span>
+        <span class="food-tag">Noodles</span>
+        <span class="food-tag-veggie">Veggie</span>
 
         <p> Steaming bowls of vegan noodles, piled high with crisp vegetables and savory toppings, are served in this busy ramen joint inside Tokyo Station. Diners with big appetites will need a side.
         </p>
       </article>
-
     </div>
 
     <footer>
-
-      <div id = "social">
-          <img src = "https://img.icons8.com/color/2x/facebook.png" alt = "facebook"/>
-          <img src = "https://img.icons8.com/color/2x/instagram-new.png" alt = "intagram"/>
-          <img src = "https://img.icons8.com/color/2x/twitter.png" alt = "twitter"/>
-        </div>
-        <div id = "footerLink">
-          <a href = "contactUs">Contact Us</a>
-          <a href = "legal_notice.html">Legal Notice</a>
-        </div>
-
+      <div id="social">
+        <a href="https://www.facebook.com/TokyoGov/" target="_blank" class="icons"><img src="https://img.icons8.com/color/2x/facebook.png" alt="facebook"/></a>
+        <a href="https://www.instagram.com/tocho_koho_official/" target="_blank" class="icons"><img src="https://img.icons8.com/color/2x/instagram-new.png" alt="instagram"/></a>
+        <a href="https://twitter.com/Tokyo_gov/" target="_blank" class="icons"><img src="https://img.icons8.com/color/2x/twitter.png" alt="twitter" /></a>
+        <a href="https://github.com/LafondMael/Project1" target="_blank" class="icons"><img src="https://img.icons8.com/nolan/2x/github.png" alt="Github"/></a>
+      </div>
+      <div id="footerLink">
+        <a href="contactUs.html" class="linkFooter">Contact Us</a>
+        <a href="legal_notice.html" class="linkFooter">Legal Notice</a>
+      </div>
     </footer>
-
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,12 +1,12 @@
 /* Structure articles & images à utiliser sur chaque page*/
-
-body .bloc-page { 
-    margin: 5%;
+body .bloc-page-sushi { 
+    margin: 2% 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-gap: 30px;
     width: auto;
     text-align: center;
+    padding-bottom: 100px;
   }
 .article-food p {
   text-align: justify;
@@ -16,27 +16,85 @@ body .bloc-page {
   font-size: 1.5em;
 }
 
+.price-tag {
+  background-color: #696969;
+  color: white;
+  border-radius: 4px;
+  padding: 0px 2px;
+}
+
+.food-tag {
+  color: white;
+  border-radius: 4px;
+  background-color: #f1535c;
+  padding: 0px 2px;
+}
+
+.food-tag-veggie {
+  background-color: #66CDAA;
+  color: white;
+  border-radius: 4px;
+  padding: 0px 2px;
+
+}
+
+
 /* Fin structure articles & images à utiliser */
 
 /* Responsive design */
+
+/* For desktop */
+@media screen and (min-width: 769px) { 
+  .sushi {
+    background: url("Images/sushi-resize.png");
+    width: 50px;
+    height: 60px;
+    display: inline-block;
+    transition: all .2s ease-out;
+    margin: 0px 50px;
+  }
+  
+  .slide-sushi {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide-sushi--inner {
+    display: block;
+    width: 200%;
+    margin: 70px 0;
+    position: absolute;
+    animation: marquee 7s linear infinite;
+    top: -40%;
+  }
+  
+  @keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+}
+
+
 /* For mobile */
 @media screen and (max-width: 768px) { 
-    body .bloc-page { 
+    body .bloc-page-sushi { 
       margin: 0;
       grid-template-columns: 100%;
     }
-   .bloc-page .article-food {
+   .bloc-page-sushi .article-food {
        text-align: center;
        padding: 5%;
     }
-    .bloc-page .article-food figure {
+    .bloc-page-sushi .article-food figure {
       margin: 0;
       width: 100%;
     }
-    .bloc-page .article-food figure img {
+    .bloc-page-sushi .article-food figure img {
       width: 100%;
     }
-    .bloc-page .article-food p {
+    .bloc-page-sushi .article-food p {
       margin-top: 10px;
       width: 90%;
     } 

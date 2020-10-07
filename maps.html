@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+    crossorigin="anonymous"
+  />
     <style>
        /* Set the size of the div element that contains the map */
       #map {
@@ -15,10 +21,9 @@
     </style>
   </head>
   <body>
-  
     <header>
         <nav>
-          <div class="logo"><h1>日本</h1></div>
+          <div class="logo"><img src="Images/logo1.png" alt="Logo"></div>
           <div class="openMenu"><i class="fa fa-bars"></i></div>
           <ul class="mainMenu">
             <li><a href="index.html">Home</a></li>
@@ -38,17 +43,97 @@
         </nav>
       </header>
 
-  <h2>Tokyo Map</h2>
+  <h2 class="MapTxt">Tokyo Map</h2>
     <!--The div element for the map -->
   <div id="map"></div>
   <script>
     // Initialize and add the map
     function initMap() {
-      var tokyo = {lat: 35.695, lng: 139.689};
-      var map = new google.maps.Map(
-          document.getElementById('map'), {zoom: 9, center: tokyo});
-      var marker = new google.maps.Marker({position: tokyo, map: map});
-    }
+      const tokyo = {lat: 35.681215, lng: 139.7670783};
+
+      let icons = {
+        monument: {
+          icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+        },
+        food: {
+          icon: 'http://maps.google.com/mapfiles/ms/icons/pink-dot.png'
+        },
+        culture: {
+          icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'
+        }
+      }
+
+      const places = [
+        {
+          position: new google.maps.LatLng(35.6851721, 139.7528207),
+          type: 'monument'
+        }, {
+          position: new google.maps.LatLng(35.6851616, 139.7100259),
+          type: 'monument'
+        }, {
+          position: new google.maps.LatLng(35.710, 139.8106),
+          type: 'monument'
+        }, {
+          position: new google.maps.LatLng(35.7147264, 139.7966556),
+          type: 'monument'
+        }, {
+          position: new google.maps.LatLng(35.6918619, 139.6953487),
+          type: 'monument'
+        }, 
+        
+        {
+          position: new google.maps.LatLng(35.6718592, 139.7973708),
+          type: 'food'
+        }, {
+          position: new google.maps.LatLng(35.660013, 139.6960917),
+          type: 'food'
+        }, {
+          position: new google.maps.LatLng(35.6802294, 139.7679072),
+          type: 'food'
+        }, {
+          position: new google.maps.LatLng(35.6673895, 139.7067611),
+          type: 'food'
+        }, {
+          position: new google.maps.LatLng(35.6631395, 139.7820786),
+          type: 'food'
+        }, {
+          position: new google.maps.LatLng(35.6629739, 139.6658029),
+          type: 'food'
+        }, {
+          position: new google.maps.LatLng(35.6797404, 139.7668917),
+          type: 'food'
+        }, 
+        
+        {
+          position: new google.maps.LatLng(-33.91662347903106, 151.22879464019775),
+          type: 'culture'
+        }, {
+          position: new google.maps.LatLng(-33.916365282092855, 151.22937399734496),
+          type: 'culture'
+        }, {
+          position: new google.maps.LatLng(-33.91665018901448, 151.2282474695587),
+          type: 'culture'
+        }, {
+          position: new google.maps.LatLng(-33.919543720969806, 151.23112279762267),
+          type: 'culture'
+        }, {
+          position: new google.maps.LatLng(-33.91608037421864, 151.23288232673644),
+          type: 'culture'
+        }
+      ];
+
+      const map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 12, center: tokyo});
+
+        for (let i = 0; i < places.length; i++) {
+          let marker = new google.maps.Marker({
+            position: places[i].position,
+            icon: icons[places[i].type].icon,
+            map: map
+          });
+        };
+      }
+    
   </script>
       <!--Load the API from the specified URL
       * The async attribute allows the browser to render the page while the API loads
@@ -61,20 +146,19 @@
   </script>
 
     
-    <footer>
-
-      <div id = "social">
-          <img src = "https://img.icons8.com/color/2x/facebook.png" alt = "facebook"/>
-          <img src = "https://img.icons8.com/color/2x/instagram-new.png" alt = "intagram"/>
-          <img src = "https://img.icons8.com/color/2x/twitter.png" alt = "twitter"/>
-        </div>
-        <div id = "footerLink">
-          <a href = "contactUs">Contact Us</a>
-          <a href = "legal_notice.html">Legal Notice</a>
-        </div>
-
-    </footer>
-
-    <script src="script.js"></script>
+<footer>
+  <div id="social">
+    <a href="https://www.facebook.com/TokyoGov/" target="_blank" class="icons"><img src="https://img.icons8.com/color/2x/facebook.png" alt="facebook"/></a>
+    <a href="https://www.instagram.com/tocho_koho_official/" target="_blank" class="icons"><img src="https://img.icons8.com/color/2x/instagram-new.png" alt="instagram"/></a>
+    <a href="https://twitter.com/Tokyo_gov/" target="_blank" class="icons"><img src="https://img.icons8.com/color/2x/twitter.png" alt="twitter" /></a>
+    <a href="https://github.com/LafondMael/Project1" target="_blank" class="icons"><img src="https://img.icons8.com/nolan/2x/github.png" alt="Github"/></a>
+  </div>
+  <div id="footerLink">
+    <a href="contactUs.html" class="linkFooter">Contact Us</a>
+    <a href="legal_notice.html" class="linkFooter">Legal Notice</a>
+  </div>
+</footer>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script src="script.js"></script>
   </body>
 </html>
