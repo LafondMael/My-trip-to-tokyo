@@ -21,7 +21,7 @@
   <body>
     <header>
       <nav>
-        <div class="logo"><h1>日本</h1></div>
+        <div class="logo"><img src="Images/logo1.png" alt="Logo"></div>
         <div class="openMenu"><i class="fa fa-bars"></i></div>
         <ul class="mainMenu">
           <li><a href="index.html">Home</a></li>
@@ -40,6 +40,11 @@
         </ul>
       </nav>
     </header>
+
+    <!--<div>
+      <h1 class="banner">My Trip to Tokyo</h1>
+      <img src="Images/japan Big.jpg" alt="banner">
+    </div>-->
 
     <div class="bloc-page-accueil">
       <section class="description-site">
@@ -109,21 +114,23 @@
       </section>
 
       <section class="categories">
-        <div class="sous-categories monuments">
-          <h2><ion-icon name="business-outline"></ion-icon> Monuments</h2>
-        </div>
 
-        <div class="sous-categories food">
-          <h2><ion-icon name="restaurant-outline"></ion-icon> Food & Drinks</h2>
-        </div>
+        <a href="monuments.html"><div class="sous-categories monuments">
+            <h2><ion-icon name="business-outline"></ion-icon> Monuments</h2>
+        </div></a>
 
-        <div class="sous-categories animes">
+        <a href="food.html"><div class="sous-categories food">
+            <h2><ion-icon name="restaurant-outline"></ion-icon> Food & Drinks</h2> 
+        </div></a>
+
+        <a href="animes.html"><div class="sous-categories animes">
           <h2><ion-icon name="game-controller-outline"></ion-icon> Animes</h2>
-        </div>
+      </div></a>
 
-        <div class="sous-categories maps">
-          <h2><ion-icon name="location-outline"></ion-icon> Maps</h2>
-        </div>
+      <a href="maps.html"><div class="sous-categories maps">
+              <h2><ion-icon name="location-outline"></ion-icon> Maps</h2>
+        </div></a>
+        
       </section>
 
       <section></section>
@@ -131,19 +138,14 @@
 
     <footer>
       <div id="social">
-        <img
-          src="https://img.icons8.com/color/2x/facebook.png"
-          alt="facebook"
-        />
-        <img
-          src="https://img.icons8.com/color/2x/instagram-new.png"
-          alt="intagram"
-        />
+        <img src="https://img.icons8.com/color/2x/facebook.png" alt="facebook"/>
+        <img src="https://img.icons8.com/color/2x/instagram-new.png" alt="instagram"/>
         <img src="https://img.icons8.com/color/2x/twitter.png" alt="twitter" />
+        <img src="https://img.icons8.com/fluent/2x/github.png" alt="Github"/>
       </div>
       <div id="footerLink">
-        <a href="contactUs.html" id="contactUs">Contact Us</a>
-        <a href="legal_notice.html" id="legal">Legal Notice</a>
+        <a href="contactUs.html">Contact Us</a>
+        <a href="legal_notice.html">Legal Notice</a>
       </div>
     </footer>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
