@@ -165,7 +165,7 @@ p {
 }
 
 #social img:hover {
-  filter: grayscale(0)
+  filter: grayscale(0);
 }
 #footerLink {
   align-items: center;
@@ -173,10 +173,10 @@ p {
   flex-direction: column;
   line-height: 1.5;
 }
-a {
+.linkFooter {
   color: #f1535c;
   text-decoration: none;
-  font-style: bold;
+  font-weight: bold;
 }
 footer{
   padding-bottom: 3%;
