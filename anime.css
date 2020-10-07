@@ -1,0 +1,46 @@
+/* Structure articles & images à utiliser sur chaque page*/
+body .bloc-page-anime { 
+    margin: 2% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-gap: 30px;
+    width: auto;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+.article-anime p {
+  text-align: justify;
+}
+.article-anime figure {
+  color: #f1535c;
+  font-size: 1.5em;
+}
+
+
+/* Fin structure articles & images à utiliser */
+
+/* Responsive design */
+
+
+/* For mobile */
+@media screen and (max-width: 768px) { 
+    body .bloc-page-anime { 
+      margin: 0;
+      grid-template-columns: 100%;
+    }
+   .bloc-page-anime .article-anime {
+       text-align: center;
+       padding: 5%;
+    }
+    .bloc-page-anime .article-anime figure {
+      margin: 0;
+      width: 100%;
+    }
+    .bloc-page-anime .article-anime figure img {
+      width: 100%;
+    }
+    .bloc-page-anime .article-anime p {
+      margin-top: 10px;
+      width: 90%;
+    } 
+  }
