@@ -122,6 +122,9 @@ h3 {
   font-weight: bold;
   font-size: 1.5em;
   text-transform: uppercase;
+  color: white;
+  background-color: #f1535c;
+  display: inline;
 }
 
 h1 {
@@ -147,36 +150,48 @@ p {
   width: 100%;
 }
 
+.img-anime {
+  width: 100%;
+}
+
+/* Début footer */
 #social {
   display: flex;
   justify-content: center;
 }
-
 #social img {
   width: 4%;
+  filter: grayscale(1);
 }
 
+#social img:hover {
+  filter: grayscale(0)
+}
 #footerLink {
   align-items: center;
   display: flex;
   flex-direction: column;
   line-height: 1.5;
 }
-
-.img-anime {
-  width: 100%;
-}
 a {
   color: #f1535c;
   text-decoration: none;
   font-style: bold;
 }
+footer{
+  padding-bottom: 3%;
+}
 /* Fin footer */
 
 /* Début legal_notice */
+#titleLegal{
+  text-align: center;
+  padding: 5%;
+}
 #lorem {
-  margin: 0 30%;
+  margin: 0 10%;
   text-align: justify;
+  padding-bottom: 5%;
 }
 /* Fin legal_notice */
 
@@ -190,6 +205,9 @@ a {
   article {
     flex-direction: column;
     align-items: center;
+  }
+  #social img {
+    width: 10%;
   }
 }
 
