@@ -137,10 +137,14 @@ p {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
-.banner{
+.bannerTxt{
+  text-size-adjust: 150%;
   color: #f1535c;
   font-family: "Kalam", cursive;
   text-align: center;
+}
+.banner{
+  width: 100%;
 }
 
 #social {
