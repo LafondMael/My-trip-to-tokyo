@@ -14,7 +14,9 @@ rose : #f1535c
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  padding-bottom: 50px;
+}
+body{
+  padding-bottom: 70px;
 }
 
 @font-face {
