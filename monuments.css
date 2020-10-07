@@ -32,13 +32,13 @@ body{
 /* Fin structure articles & images à utiliser */
 
 /* Début partie read more */
-#more1{
+.more {
   display: none;
 }
 button{
   border: none;
   background-color: #e9e8e8;
-  padding: 0.5%;
+  padding: 3px;
   border-radius: 10px;
 }
 

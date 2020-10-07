@@ -10,17 +10,55 @@ rose : #f1535c
 /* Elements principaux de la page */
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-/* Elements principaux de la page */
-
-body {
-  font-family: "Kalam", cursive;
+  box-sizing: border-box;
+  font-family: sans-serif;
   padding-bottom: 50px;
 }
+
+@font-face {
+  font-family: "Kalam-Bold";
+  src: url("Kalam-Regular.ttf");
+}
+h1 {
+  color: #f1535c;
+  font-size: 3em;
+  font-family: 'Kalam', cursive;
+  margin-bottom: 30px;
+  }
+
+h2 {
+  color: #f1535c;
+  font-weight: bold;
+  font-family: 'Kalam', cursive;
+  text-align: center;
+  padding: 10px;
+}
+ 
+h3 {
+  font-family: calibri, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white;
+  background-color: #f1535c;
+  display: inline;
+}
+
+p {
+  color: #333;
+  font-family: calibri, sans-serif;
+  line-height: 1.5;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+figcaption {
+  font-family: 'Kalam', cursive;
+}
+/* Elements principaux de la page */
+
 nav {
   background: #000;
   color: #fff;
@@ -38,6 +76,7 @@ nav .mainMenu li a {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 1.5rem;
+  font-family: "Kalam", cursive;
 }
 nav .mainMenu li a:hover {
   background: rgb(255, 94, 0);
@@ -107,49 +146,6 @@ nav .logo {
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
-@font-face {
-  font-family: "Kalam-Bold";
-  src: url("Kalam-Regular.ttf");
-}
-h3 {
-  font-family: calibri, sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  color: white;
-  background-color: #f1535c;
-  display: inline;
-}
-
-h1 {
-  color: #f1535c;
-  font-family: "Kalam", cursive;
-}
-
-p {
-  color: #333;
-  font-family: calibri, sans-serif;
-  line-height: 1.5;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-}
-.bannerTxt{
-  text-size-adjust: 150%;
-  color: #f1535c;
-  font-family: "Kalam", cursive;
-  text-align: center;
-}
-.banner{
-  width: 100%;
-}
 
 .img-anime {
   width: 100%;
