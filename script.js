@@ -21,7 +21,6 @@ function close() {
 }
 
 // Début partie read more
-
 const btn1 = document.querySelector(".button1");
 const btn2 = document.querySelector(".button2");
 const btn3 = document.querySelector(".button3");
@@ -41,3 +40,11 @@ function read(e){
   }
 }
 // Fin partie read more
+
+// Début bouton top
+const topBtn = document.querySelector(".topButton");
+topBtn.addEventListener("click")
+// function scrollTop(){
+//   topButton.style.display = "none";
+// }
+// Fin bouton top
