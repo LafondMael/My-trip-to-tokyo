@@ -150,7 +150,6 @@ p {
   width: 100%;
 }
 
-
 /* Début footer */
 #social {
   display: flex;
@@ -158,6 +157,11 @@ p {
 }
 #social img {
   width: 4%;
+  filter: grayscale(1);
+}
+
+#social img:hover {
+  filter: grayscale(0)
 }
 #footerLink {
   align-items: center;
