@@ -6,6 +6,7 @@ body .bloc-page-sushi {
     grid-gap: 30px;
     width: auto;
     text-align: center;
+    padding-bottom: 100px;
   }
 .article-food p {
   text-align: justify;

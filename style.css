@@ -14,6 +14,7 @@ rose : #f1535c
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  padding-bottom: 50px;
 }
 
 @font-face {
@@ -156,12 +157,18 @@ nav .logo {
   justify-content: center;
 }
 #social img {
-  width: 4%;
+  width: 100%;
   filter: grayscale(1);
 }
 
 #social img:hover {
-  filter: grayscale(0)
+  filter: grayscale(0);
+}
+
+.icons{
+  display: inline-block;
+  width: 55px;
+  height: 55px;
 }
 #footerLink {
   align-items: center;
@@ -169,13 +176,21 @@ nav .logo {
   flex-direction: column;
   line-height: 1.5;
 }
-a {
+.linkFooter {
   color: #f1535c;
   text-decoration: none;
-  font-style: bold;
+  font-weight: bold;
 }
 footer{
-  padding-bottom: 3%;
+  margin: 0;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0 -10px 70px -18px black;
 }
 /* Fin footer */
 
@@ -202,9 +217,12 @@ footer{
     flex-direction: column;
     align-items: center;
   }
-  #social img {
-    width: 10%;
+
+  .icons {
+    width: 30px;
+    height: 30px;
   }
+
 }
 
 /*Contact Us*/
