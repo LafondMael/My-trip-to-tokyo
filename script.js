@@ -1,3 +1,10 @@
+const homePageLogo = document.querySelector('.logo');
+const homePageImg = document.querySelector('.logo img');
+const homePageLink = document.createElement('a');
+homePageLink.href = "index.html";
+homePageLink.appendChild(homePageImg);
+homePageLogo.appendChild(homePageLink);
+
 const mainMenu = document.querySelector(".mainMenu");
 const closeMenu = document.querySelector(".closeMenu");
 const openMenu = document.querySelector(".openMenu");
