@@ -19,6 +19,7 @@ rose : #f1535c
 
 body {
   font-family: "Kalam", cursive;
+  padding-bottom: 50px;
 }
 nav {
   background: #000;
@@ -186,8 +187,8 @@ p {
 }
 footer{
   margin: 0;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   position: fixed;
   bottom: 0;
   z-index: 99;
