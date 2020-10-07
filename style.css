@@ -5,6 +5,10 @@ gris : #333
 rose : #f1535c
 */
 
+/* For tablets and laptops */
+
+/* Elements principaux de la page */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,7 +35,7 @@ nav .mainMenu li a {
   padding: 15px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 nav .mainMenu li a:hover {
@@ -67,7 +71,6 @@ nav .logo {
   font-size: 25px;
   cursor: pointer;
 }
-
 @media (max-width: 800px) {
   nav .mainMenu {
     height: 100vh;
@@ -102,23 +105,17 @@ nav .logo {
     padding: 12px;
   }
 }
-/*
-Barre de Nav
-*/
 
-h1 {
-    color: #f1535c;
-    font-size: 3em;
-    font-family: 'Kalam', cursive;
-    margin-bottom: 30px;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 
-h2 {
-    color: #f1535c;
-    font-weight: bold;
-    font-family: 'Kalam', cursive;
-    text-align: center;
-    padding: 10px;
+@font-face {
+  font-family: "Kalam-Bold";
+  src: url("Kalam-Regular.ttf");
 }
 h3 {
   font-family: calibri, sans-serif;
@@ -129,6 +126,12 @@ h3 {
   background-color: #f1535c;
   display: inline;
 }
+
+h1 {
+  color: #f1535c;
+  font-family: "Kalam", cursive;
+}
+
 p {
   color: #333;
   font-family: calibri, sans-serif;
@@ -137,8 +140,12 @@ p {
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
+.banner{
+  color: #f1535c;
+  font-family: "Kalam", cursive;
+  text-align: center;
+}
 
-/* Début footer */
 #social {
   display: flex;
   justify-content: center;
@@ -155,10 +162,13 @@ p {
   line-height: 1.5;
 }
 
+.img-anime {
+  width: 100%;
+}
 a {
-    color: #f1535c;
-    text-decoration: none;
-    font-style: bold;
+  color: #f1535c;
+  text-decoration: none;
+  font-style: bold;
 }
 /* Fin footer */
 
@@ -171,7 +181,7 @@ a {
 
 /* Responsive design */
 /* For mobile */
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
   .categories {
     flex-wrap: wrap;
   }
@@ -211,3 +221,9 @@ input[type="submit"] {
   padding: 20px;
 }
 /*Contact Us*/
+/*Map*/
+.MapTxt {
+  color: #f1535c;
+  font-family: "Kalam", cursive;
+  text-align: center;
+}
