@@ -169,19 +169,20 @@ nav .logo {
 
 .icons{
   display: inline-block;
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
 }
 #footerLink {
-  align-items: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   line-height: 1.5;
 }
 .linkFooter {
-  color: #f1535c;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
+  font-size: 15px;
+  padding: 3px;
 }
 footer{
   margin: 0;
