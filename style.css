@@ -184,17 +184,6 @@ nav .logo {
   font-weight: bold;
   font-size: 15px;
 }
-footer{
-  margin: 0;
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
-  position: fixed;
-  bottom: 0;
-  z-index: 99;
-  background-color: white;
-  width: 100%;
-  box-shadow: 0 -10px 70px -18px black;
-}
 /* Fin footer */
 
 /* Début legal_notice */
@@ -215,17 +204,17 @@ footer{
   .categories {
     flex-wrap: wrap;
   }
-
+  
   article {
     flex-direction: column;
     align-items: center;
   }
-
+  
   .icons {
     width: 30px;
     height: 30px;
   }
-
+  
 }
 
 /*Contact Us*/
@@ -265,7 +254,21 @@ input[type="submit"] {
 }
 
 /* Début bouton top */
+.topButton {
+  display: none;
+}
 @media screen and (min-width: 769px) {
+  footer{
+    margin: 0;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 -10px 30px -18px black;
+  }
   .topButton {
     width: 50px;
     height: 50px;
@@ -279,7 +282,7 @@ input[type="submit"] {
     opacity: 0.3;
     transition : opacity 0.3s ease; 
     color: white;
-    display: block;
+    display: "none";
   }
   .topButton:hover {
     opacity: 1;
