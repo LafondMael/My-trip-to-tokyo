@@ -173,16 +173,16 @@ nav .logo {
   height: 40px;
 }
 #footerLink {
-  align-items: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   line-height: 1.5;
 }
 .linkFooter {
-  color: #f1535c;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
   font-size: 15px;
+  padding: 3px;
 }
 /* Fin footer */
 
@@ -252,6 +252,18 @@ input[type="submit"] {
   font-family: "Kalam", cursive;
   text-align: center;
 }
+.dots{
+  padding: 4%;
+  margin-top: 0%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.dotMonu{
+  margin-right: 10px;
+}
 
 /* Début bouton top */
 .topButton {
@@ -290,3 +302,4 @@ input[type="submit"] {
   }
 }
 /* Fin bouton top */
+
