@@ -14,6 +14,7 @@ rose : #f1535c
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 body{
   padding-bottom: 70px;
@@ -28,7 +29,7 @@ h1 {
   font-size: 3em;
   font-family: 'Kalam', cursive;
   margin-bottom: 30px;
-  }
+}
 
 h2 {
   color: #f1535c;
@@ -37,7 +38,7 @@ h2 {
   text-align: center;
   padding: 10px;
 }
- 
+
 h3 {
   font-family: calibri, sans-serif;
   font-weight: bold;
@@ -214,6 +215,10 @@ nav .logo {
     width: 30px;
     height: 30px;
   }
+  .topButton {
+    display: none;
+    opacity: 0;
+  }
   
 }
 
@@ -266,9 +271,6 @@ input[type="submit"] {
 }
 
 /* Début bouton top */
-.topButton {
-  display: none;
-}
 @media screen and (min-width: 769px) {
   footer{
     margin: 0;
