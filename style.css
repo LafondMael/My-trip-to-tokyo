@@ -263,3 +263,15 @@ input[type="submit"] {
   font-family: "Kalam", cursive;
   text-align: center;
 }
+.dots{
+  padding: 4%;
+  margin-top: 0%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.dotMonu{
+  margin-right: 10px;
+}
