@@ -17,7 +17,7 @@ h2 {
 }
 .banneraccueil .bannerTxt {
     color: #fff;
-    font-size: 100px;
+    font-size: 80px;
     font-family: "Kalam", cursive;
     line-height: 1.5em;
     text-shadow: 2px 2px 12px #000;
@@ -37,6 +37,9 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.categories a {
+    text-decoration: none;
 }
 .categories .sous-categories {
     margin: 10px;

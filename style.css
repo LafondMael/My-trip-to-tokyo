@@ -14,6 +14,7 @@ rose : #f1535c
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 body{
   padding-bottom: 70px;
@@ -28,7 +29,7 @@ h1 {
   font-size: 3em;
   font-family: 'Kalam', cursive;
   margin-bottom: 30px;
-  }
+}
 
 h2 {
   color: #f1535c;
@@ -37,7 +38,7 @@ h2 {
   text-align: center;
   padding: 10px;
 }
- 
+
 h3 {
   font-family: calibri, sans-serif;
   font-weight: bold;
@@ -169,30 +170,20 @@ nav .logo {
 
 .icons{
   display: inline-block;
-  width: 55px;
-  height: 55px;
+  width: 40px;
+  height: 40px;
 }
 #footerLink {
-  align-items: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   line-height: 1.5;
 }
 .linkFooter {
-  color: #f1535c;
+  color: #333;
   text-decoration: none;
   font-weight: bold;
-}
-footer{
-  margin: 0;
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
-  position: fixed;
-  bottom: 0;
-  z-index: 99;
-  background-color: white;
-  width: 100%;
-  box-shadow: 0 -10px 70px -18px black;
+  font-size: 15px;
+  padding: 3px;
 }
 /* Fin footer */
 
@@ -214,17 +205,21 @@ footer{
   .categories {
     flex-wrap: wrap;
   }
-
+  
   article {
     flex-direction: column;
     align-items: center;
   }
-
+  
   .icons {
     width: 30px;
     height: 30px;
   }
-
+  .topButton {
+    display: none;
+    opacity: 0;
+  }
+  
 }
 
 /*Contact Us*/
@@ -262,3 +257,54 @@ input[type="submit"] {
   font-family: "Kalam", cursive;
   text-align: center;
 }
+.dots{
+  padding: 4%;
+  margin-top: 0%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.dotMonu{
+  margin-right: 10px;
+}
+
+/* Début bouton top */
+.topButton{
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  footer{
+    margin: 0;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 -10px 30px -18px black;
+  }
+  .topButton {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 150px;
+    background-color: #f1535c;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    right: 20px;
+    opacity: 0.3;
+    transition : opacity 0.3s ease; 
+    color: white;
+    display: "none";
+  }
+  .topButton:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+/* Fin bouton top */
+

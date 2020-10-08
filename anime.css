@@ -1,0 +1,142 @@
+.slideshow {
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slideshow-item {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  animation: cycleImages 31s infinite;
+}
+.slideshow-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoom 31s infinite;
+}
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img{
+  animation-delay: 0s;
+}
+.slideshow-item:nth-child(2), 
+.slideshow-item:nth-child(2) img{
+  animation-delay: 10s;
+}
+.slideshow-item:nth-child(3), 
+.slideshow-item:nth-child(3) img{
+  animation-delay: 20s;
+}
+.slideshow-item-text {
+  max-width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10rem 5rem;
+}
+.slideshow-item-text h5 {
+  font-size: 5rem;
+  font-family: "calibri", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 2.5rem;
+}
+.slideshow-item-text p{
+  font-size: 1.6rem;
+  font-family: "calibri", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 10px;
+}
+@keyframes cycleImages {
+  25%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 0;
+  }
+}
+@keyframes zoom {
+  100%{
+    transform: scale(1.3);
+  }
+}
+@media screen and (min-width: 769px){
+  .slideshow-item-text {
+    max-width: 70%;
+    padding: 5rem 1rem;
+  }
+  .slideshow-item-text h5{
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 768px){
+  .slideshow-item-text {
+    max-width: 100%;
+    padding: 2rem;
+    top: initial;
+    bottom: 0;
+    transform: initial;
+  }
+  .slideshow-item-text h5{
+    font-size: 100%;
+  } 
+  .slideshow-item-text p{
+    font-size: 1.4rem;
+  } 
+}
+
+
+
+/* Structure articles & images à utiliser sur chaque page*/
+body .bloc-page-anime { 
+    margin: 2% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 30px;
+    width: auto;
+    text-align: center;
+    padding-bottom: 100px;
+  }
+.article-anime p {
+  text-align: justify;
+}
+.article-anime figure {
+  color: #f1535c;
+  font-size: 1.5em;
+}
+
+
+/* Fin structure articles & images à utiliser */
+
+/* Responsive design */
+
+
+/* For mobile */
+@media screen and (max-width: 768px) { 
+    body .bloc-page-anime { 
+      margin: 0;
+      grid-template-columns: 100%;
+    }
+   .bloc-page-anime .article-anime {
+       text-align: center;
+       padding: 5%;
+    }
+    .bloc-page-anime .article-anime figure {
+      margin: 0;
+      width: 100%;
+    }
+    .bloc-page-anime .article-anime figure img {
+      width: 100%;
+    }
+    .bloc-page-anime .article-anime p {
+      margin-top: 10px;
+      /* width: 90%; */
+    } 
+  }
