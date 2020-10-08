@@ -67,7 +67,7 @@
     transform: scale(1.3);
   }
 }
-@media screen and (max-width: 769px){
+@media screen and (min-width: 769px){
   .slideshow-item-text {
     max-width: 70%;
     padding: 5rem 1rem;
@@ -85,7 +85,7 @@
     transform: initial;
   }
   .slideshow-item-text h5{
-    font-size: 3rem;
+    font-size: 100%;
   } 
   .slideshow-item-text p{
     font-size: 1.4rem;
@@ -137,6 +137,6 @@ body .bloc-page-anime {
     }
     .bloc-page-anime .article-anime p {
       margin-top: 10px;
-      width: 90%;
+      /* width: 90%; */
     } 
   }

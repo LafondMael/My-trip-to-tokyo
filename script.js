@@ -27,11 +27,12 @@ let scrollPos = 0;
 window.addEventListener("scroll", function(){
   scrollPos = window.scrollY;
   if(scrollPos > 300){
-    topBtn.style.display = "block";
+    topBtn.style.display="block";
   } else if (scrollPos < 300){
-    topBtn.style.display = "none";
+    topBtn.style.display ="none";
   }
 });
+
 topBtn.addEventListener("click", function(){
   document.documentElement.scrollTop = 0;
 })
