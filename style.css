@@ -271,6 +271,9 @@ input[type="submit"] {
 }
 
 /* Début bouton top */
+.topButton{
+  display: none;
+}
 @media screen and (min-width: 769px) {
   footer{
     margin: 0;
