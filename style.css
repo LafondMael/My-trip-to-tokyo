@@ -184,17 +184,6 @@ nav .logo {
   font-size: 15px;
   padding: 3px;
 }
-footer{
-  margin: 0;
-  padding-top: 0.5%;
-  padding-bottom: 0.5%;
-  position: fixed;
-  bottom: 0;
-  z-index: 99;
-  background-color: white;
-  width: 100%;
-  box-shadow: 0 -10px 70px -18px black;
-}
 /* Fin footer */
 
 /* Début legal_notice */
@@ -215,17 +204,17 @@ footer{
   .categories {
     flex-wrap: wrap;
   }
-
+  
   article {
     flex-direction: column;
     align-items: center;
   }
-
+  
   .icons {
     width: 30px;
     height: 30px;
   }
-
+  
 }
 
 /*Contact Us*/
@@ -275,3 +264,42 @@ input[type="submit"] {
 .dotMonu{
   margin-right: 10px;
 }
+
+/* Début bouton top */
+.topButton {
+  display: none;
+}
+@media screen and (min-width: 769px) {
+  footer{
+    margin: 0;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 -10px 30px -18px black;
+  }
+  .topButton {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 150px;
+    background-color: #f1535c;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    right: 20px;
+    opacity: 0.3;
+    transition : opacity 0.3s ease; 
+    color: white;
+    display: "none";
+  }
+  .topButton:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+/* Fin bouton top */
+
